@@ -1,0 +1,26 @@
+item.item_netherite_stick.name=Netherite Stick
+item.item_netherite_ingot.name=Netherite Ingot
+item.item_netherite_sword.name=Netherite Sword
+item.item_netherite_pickaxe.name=Netherite Pickaxe
+item.item_netherite_axe.name=Netherite Axe
+item.item_netherite_shovel.name=Netherite Shovel
+item.item_netherite_hoe.name=Netherite Hoe
+item.item_netherite_helmet.name=Netherite Helmet
+item.item_netherite_chestplate.name=Netherite Chestplate
+item.item_netherite_leggings.name=Netherite Leggings
+item.item_netherite_boots.name=Netherite Boots
+item.item_netherite_scrap.name=Netherite Scrap
+
+
+
+item.item_netherite_hammer.name=Netherite Hammer
+
+
+
+tile.block_ancient_debris.name=Ancient Debris
+tile.block_shroomlight.name=Shroomlight
+
+
+
+itemGroup.tabNetherite=Netherite 1.7.10
+

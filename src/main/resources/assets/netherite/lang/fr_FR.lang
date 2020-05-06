@@ -1,0 +1,24 @@
+item.item_netherite_stick.name=Batton en netherite
+item.item_netherite_ingot.name=L'ingot de Netherite
+item.item_netherite_sword.name=épée en Netherite
+item.item_netherite_pickaxe.name=Pioche en Netherite
+item.item_netherite_axe.name=Hache en Netherite
+item.item_netherite_shovel.name=Pelle en Netherite
+item.item_netherite_hoe.name=Bèche en Netherite
+item.item_netherite_helmet.name=Casque en Netherite
+item.item_netherite_chestplate.name=Plastron en Netherite
+item.item_netherite_leggings.name=Jambière en Netherite
+item.item_netherite_boots.name=Botte en Netherite
+item.item_netherite_scrap.name=Fragment de Netherite
+
+
+
+item.item_netherite_hammer.name=Netherite Hammer
+
+
+
+tile.block_ancient_debris.name=Ancient Debris
+tile.block_shroomlight.name=Champilamp
+
+
+itemGroup.tabNetherite=Netherite 1.7.10

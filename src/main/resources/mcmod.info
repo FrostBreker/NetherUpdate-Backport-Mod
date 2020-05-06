@@ -6,9 +6,8 @@
 
 You can use this mod in your modpack
 
-Thank you for reading =)!
 
- 
+Thank you for reading =)!
 
 Compatible language:
 
@@ -19,9 +18,9 @@ French_FR",
   "mcversion": "${mcversion}",
   "url": "https://twitter.com/FrostBreker",
   "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/netherite-1-7-10",
-  "authorList": ["FrostBreker, Notch"],
+  "authorList": ["FrostBreker"],
   "credits": "",
-  "logoFile": "ancien_netherite1.png",
+  "logoFile": "",
   "screenshots": [],
   "dependencies": []
 }
