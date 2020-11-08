@@ -6,6 +6,7 @@ import com.mod.nether.items.ItemArmorNetherite;
 import com.mod.nether.items.ItemAxeNetherite;
 import com.mod.nether.items.ItemHammerNetherite;
 import com.mod.nether.items.ItemHoeNetherite;
+import com.mod.nether.items.ItemNetheriteSeed;
 import com.mod.nether.items.ItemPickaxeNetherite;
 import com.mod.nether.items.ItemShovelNetherite;
 import com.mod.nether.items.ItemSwordNetherite;
@@ -29,7 +30,7 @@ public class ItemMod
     
     
     public static Item item_netherite_scrap, item_netherite_ingot, item_netherite_sword, item_netherite_pickaxe, item_netherite_shovel, item_netherite_axe, item_netherite_hoe, item_helmet_netherite, item_chestplate_netherite;
-    public static Item item_leggings_netherite, item_boots_netherite, item_hammer_netherite, item_stick_netherite;
+    public static Item item_leggings_netherite, item_boots_netherite, item_hammer_netherite, item_stick_netherite, item_netherite_nuggets, item_netherite_seed;
     
 
     public static void init()
@@ -50,6 +51,10 @@ public class ItemMod
         item_hammer_netherite = new ItemHammerNetherite(toolHammerNetherite).setUnlocalizedName("item_netherite_hammer").setTextureName(Reference.MOD_ID + ":hammer_netherite").setCreativeTab(ModNetherite.tabNetherite);
         item_stick_netherite = new Item().setUnlocalizedName("item_netherite_stick").setTextureName(Reference.MOD_ID + ":netherite_stick").setCreativeTab(ModNetherite.tabNetherite);
         
+        
+        item_netherite_nuggets = new Item().setUnlocalizedName("item_netherite_nuggets").setTextureName(Reference.MOD_ID + ":netherite_nugget").setCreativeTab(ModNetherite.tabNetherite);
+        item_netherite_seed = new ItemNetheriteSeed(BlockMod.culture_netherite, Blocks.farmland).setUnlocalizedName("item_netherite_seed").setCreativeTab(ModNetherite.tabNetherite).setTextureName(Reference.MOD_ID + ":netherite_seeds");
+        
     }
     
     public static void register()
@@ -67,6 +72,8 @@ public class ItemMod
         GameRegistry.registerItem(item_boots_netherite, "item_boots_netherite");
         GameRegistry.registerItem(item_hammer_netherite, "item_hammer_netherite");
         GameRegistry.registerItem(item_stick_netherite, "item_stick_netherite");
+        GameRegistry.registerItem(item_netherite_seed, "item_netherite_seed");
+        GameRegistry.registerItem(item_netherite_nuggets, "item_netherite_nuggets");
         
         
         

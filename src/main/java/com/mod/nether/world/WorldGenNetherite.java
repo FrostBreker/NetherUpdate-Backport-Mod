@@ -3,6 +3,7 @@ package com.mod.nether.world;
 import java.util.Random;
 
 import com.mod.nether.init.BlockMod;
+import com.mod.nether.init.StructureGenMod;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
@@ -45,21 +46,41 @@ public class WorldGenNetherite implements IWorldGenerator
         }
     }
     
+    private void addStructure(String string, Random random, World world, int posX, int posZ, int minY, int maxY, int spawnChance)
+    {
+        for(int i = 0; i < spawnChance ; i++)
+        {
+            int chunkSize = 16;
+            int Xpos = posX + random.nextInt(chunkSize);
+            int Ypos = minY + random.nextInt(maxY - minY);
+            int Zpos = posZ + random.nextInt(chunkSize);
+            
+            new StructureGenMod().generate(string, world, random, Xpos, Ypos, Zpos);
+        //    new StructureGenMod().generate1(string, world, random, Xpos, Ypos, Zpos);
+        }
+    }
 
 
     private void GenerateNether(World world, int i, int j, Random random)
     {
-        addOre(BlockMod.block_ancient_debris, Blocks.stone, random, world, i, j, 10, 18, 3, 5, 20);
+        addOre(BlockMod.block_ancient_debris, Blocks.netherrack, random, world, i, j, 10, 18, 3, 5, 10);
+        addOre(BlockMod.nether_gold_ore, Blocks.netherrack, random, world, i, j, 10, 117, 5, 7, 60);
+        addOre(BlockMod.nether_diamond_ore, Blocks.netherrack, random, world, i, j, 10, 18, 3, 7, 14);
+        addOre(BlockMod.nether_iron_ore, Blocks.netherrack, random, world, i, j, 10, 117, 5, 7, 70);
+        addOre(BlockMod.nether_coal_ore, Blocks.netherrack, random, world, i, j, 10, 117, 5, 7, 80);
+        addOre(BlockMod.nether_emerald_ore, Blocks.netherrack, random, world, i, j, 10, 18, 2, 4, 12);
+        addStructure("StructureWarped", random, world, i, j, 150, 200, 125);
+      //  addStructure("StructureCrimson", random, world, i, j, 150, 250, 170);
     }
 
     private void GenerateOverWorld(World world, int i, int j, Random random)
     {
-        addOre(BlockMod.block_ancient_debris, Blocks.stone, random, world, i, j, 10, 18, 1, 3, 12);
+       
     }
 
     private void GenerateEnd(World world, int i, int j, Random random)
     {
-        addOre(BlockMod.block_ancient_debris, Blocks.stone, random, world, i, j, 10, 60, 5, 9, 30);
+        addOre(BlockMod.block_ancient_debris, Blocks.end_stone, random, world, i, j, 10, 60, 5, 9, 15);
     }
     
 }
