@@ -1,4 +1,4 @@
-# Nether Update Backport Mod
+# Nether Update Backport Mod 1.12.2
 ## About
 
 Welcome to NetherUpdate Backport mod, this mod adds the additions of 1.16 to 1.7.10; 1.12.2 and 1.14
