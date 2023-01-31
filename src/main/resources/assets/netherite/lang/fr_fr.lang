@@ -1,0 +1,18 @@
+item.netherite_ingot.name=L'ingot de Netherite
+item.netherite_scrap.name=Fragments de Netherite
+
+item.netherite_sword.name=Épée en Netherite
+item.netherite_pickaxe.name=Pioche en Netherite
+item.netherite_axe.name=Hache en Netherite
+item.netherite_shovel.name=Pelle en Netherite
+item.netherite_hoe.name=Houe en Netherite
+
+item.netherite_helmet.name=Casque en Netherite
+item.netherite_chestplate.name=Plastron en Netherite
+item.netherite_leggings.name=Jambières en Netherite
+item.netherite_boots.name=Bottes en Netherite
+
+tile.netherite_block.name=Bloc de Netherite
+tile.ancient_debris.name=Ancien Débris
+
+itemGroup.netherupdate=Nether Update
